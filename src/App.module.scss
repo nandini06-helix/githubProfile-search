@@ -1,0 +1,85 @@
+.container{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  height:500px;
+  font-family: Helvetica, sans-serif;
+  gap:3rem;
+  .head{
+    display: flex;
+    gap:2rem;
+  }
+  input{
+    padding-left: 2rem;
+    width:500px;
+    height:3rem;
+    font-size: 1.2rem;
+    background: none;
+    outline:none;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: whitesmoke;
+    color:whitesmoke;
+    &::placeholder,&:focus{
+      color:whitesmoke;
+    }
+    
+    
+  }
+  .search{
+    position:relative;
+    right:33.7rem;
+  }
+  .head{
+    display:flex;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+  .card{
+    display:flex;
+    gap:3rem;
+    max-width: 800px;
+    flex-direction: row;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    border: 3px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(13px);
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius:2rem;
+    .dp{
+      object-fit: cover;
+      width:300px;
+      clip-path:circle(40%);
+    }
+  }
+  .list_items{
+    display:flex;
+    flex-direction: column;
+    gap:3px;
+    padding-top:3rem;
+    flex-wrap: wrap;
+    background:none;
+    list-style: none;
+    color: black;
+    #login,a{
+      font-size: 2rem;
+      color: black;
+    }
+    #name{
+      font-size: 1rem;
+      color:black;
+    }
+    
+  }
+  .btn{
+    border-radius:0.5rem;
+    width: 8rem;
+    font-size: 1.2rem;
+    padding-left:11px;
+    background-color: #C2D9FF;
+    border: solid black 0.1rem;
+  }
+
+  
+}
+
+
